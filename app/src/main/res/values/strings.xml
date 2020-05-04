@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">学生成绩统计</string>
+    <string name="cancle">取消</string>
+    <string name="title">请选择时间</string>
+    <string name="commit">确定</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+    <string name="empty_message">No items yet</string>
+    <string name="loading_message">Please wait</string>
+    <string name="error_message">Oops! Something wrong happened</string>
+    <string name="empty_button">Try again</string>
+    <string name="loading_button">Cancel</string>
+    <string name="error_button">Try again</string>
+    <string name="base_url">http://www.lynu.edu.cn/news/lynunews/%d.shtml</string>
+    <string name="base_sick_url">http://jbk.39.net%s</string>
+    <string name="base_sick_wapurl">http://wapjbk.39.net%s</string>
+</resources>

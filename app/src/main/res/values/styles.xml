@@ -1,0 +1,116 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item><!-- toolbar（actionbar）颜色 -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item><!-- 状态栏颜色 -->
+        <item name="colorAccent">@color/colorAccent</item><!-- 窗口的背景颜色 -->
+
+    </style>
+
+    <style name="ToolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+
+    <style name="AppTheme" parent="BaseAppTheme"/>
+
+    <style name="DrawerLayoutTheme" parent="AppTheme"></style>
+
+
+    <style name="textview_title">
+        <item name="android:padding">5dip</item>
+        <item name="android:textColor">#51b1f9</item>
+        <item name="android:textSize">16sp</item>
+
+    </style>
+    <style name="textview_tip">
+        <item name="android:padding">5dip</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textSize">14sp</item>
+
+    </style>
+    <style name="textview_white">
+        <item name="android:padding">5dip</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+
+    </style>
+    <style name="textview_content">
+        <item name="android:padding">5dip</item>
+        <item name="android:textColor">@color/hgray</item>
+        <item name="android:textSize">12sp</item>
+
+    </style>
+
+    <!--底部dialog弹出框动画-->
+    <style name="share_animation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_out</item>
+    </style>
+    <!--&lt;!&ndash;底部dialog弹出框动画&ndash;&gt;-->
+    <!--<style name="share_animation" parent="android:Animation">-->
+        <!--<item name="android:windowEnterAnimation">@anim/dialog_enter</item>-->
+        <!--<item name="android:windowExitAnimation">@anim/dialog_out</item>-->
+    <!--</style>-->
+
+    <!-- 对话框样式 -->
+    <style name="dialog_bottom_full" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+    <style name="coll_TextSize">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <!--toolbar 菜单项样式-->
+    <style name="ToolbarTheme" parent="AppTheme">
+        <item name="actionMenuTextColor">@color/white</item> <!--颜色-->
+        <item name="android:textSize">18sp</item> <!--字体大小-->
+    </style>
+    <!--<style name="menu_labels_style">-->
+        <!--<item name="android:background">@drawable/fab_label_background</item>-->
+        <!--<item name="android:textColor">@color/white</item>-->
+    <!--</style>-->
+    <style name="time_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+
+    <style name="PopupMenuListView" parent="@android:style/Widget.Holo.ListView.DropDown">
+
+     <item name="android:divider">@color/gray</item><!--menu列表项分割线的颜色-->
+     <item name="android:dividerHeight">1px</item><!--menu列表项分割线的高度-->
+    </style>
+    <!--溢出[弹出]菜单样式 parent相当于继承【可以不要parent】-->
+    <style name="OverflowMenuStyle" parent="@style/Widget.AppCompat.PopupMenu.Overflow">
+        <!-- 是否覆盖锚点，默认为true，即盖住Toolbar -->
+        <item name="overlapAnchor">false</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+        <item name="android:paddingRight">5dp</item>
+        <!-- 弹出层背景颜色 -->
+        <item name="android:popupBackground">@color/white</item>
+        <!-- 弹出层垂直方向上的偏移，即在竖直方向上距离Toolbar的距离，值为负则会盖住Toolbar -->
+        <item name="android:dropDownVerticalOffset">5dp</item>
+        <!-- 弹出层水平方向上的偏移，即距离屏幕左边的距离，负值会导致右边出现空隙 -->
+        <item name="android:dropDownHorizontalOffset">0dp</item>
+        <!-- 设置弹出菜单文字颜色 -->
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>
